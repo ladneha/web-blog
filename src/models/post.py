@@ -1,6 +1,8 @@
-from src.comman.database import Database
 import uuid
+from src.common.database import Database
 import datetime
+
+__author__ = 'neha'
 
 
 class Post(object):
@@ -22,8 +24,8 @@ class Post(object):
             '_id': self._id,
             'blog_id': self.blog_id,
             'author': self.author,
-            'title': self.title,
             'content': self.content,
+            'title': self.title,
             'created_date': self.created_date
         }
 

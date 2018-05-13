@@ -13,5 +13,7 @@
     {% else %}
         <h4>There aren't any posts yet!</h4>
     {% endif %}
+    <p><a href="{{ url_for('user_blogs') }}">Back to Blogs</a></p>
+    <p><a href="{{ url_for('login_template') }}" class="btn btn-primary">Logout</a></p>
 </div>
 {% endblock %}
